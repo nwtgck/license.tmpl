@@ -1,4 +1,4 @@
-{{if eq .license "apache-2.0"}}
+{{- if eq .license "apache-2.0" -}}
                                  Apache License
                            Version 2.0, January 2004
                         http://www.apache.org/licenses/
@@ -200,7 +200,7 @@
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.
-{{else if eq .license "bsd-2-clause"}}
+{{- else if eq .license "bsd-2-clause" -}}
 BSD 2-Clause License
 
 Copyright (c) {{.Now.year}}, {{.UserName}}
@@ -226,7 +226,7 @@ SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
 CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
 OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-{{else if eq .license "bsd-3-clause"}}
+{{- else if eq .license "bsd-3-clause" -}}
 BSD 3-Clause License
 
 Copyright (c) {{.Now.year}}, {{.UserName}}
@@ -256,7 +256,7 @@ SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
 CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
 OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-{{else if eq .license "mit"}}
+{{- else if eq .license "mit" -}}
 MIT License
 
 Copyright (c) {{.Now.year}} {{.UserName}}
@@ -278,7 +278,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-{{else if eq .license "unlicense"}}
+{{- else if eq .license "unlicense" -}}
 This is free and unencumbered software released into the public domain.
 
 Anyone is free to copy, modify, publish, use, compile, sell, or
@@ -303,4 +303,4 @@ ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 OTHER DEALINGS IN THE SOFTWARE.
 
 For more information, please refer to <http://unlicense.org>
-{{end}}
+{{- end}}
